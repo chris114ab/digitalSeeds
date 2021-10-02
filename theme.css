@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto');
+
+.mobileBanner{
+	visibility:hidden;
+	width:100%;
+		height:100%;
+		position:fixed;
+		background-color:black;
+		align-items:center;
+}
+
+#mainPage{
+	min-width:800px;
+}
+body {
+	padding:0px;
+	margin:0px;
+}
+
+.contain{
+	position:fixed;
+	top:0px;
+	z-index:-1;
+	background-color:#96e0ff;
+	width:100%;
+	height:100%;
+}
+
+marquee{
+	position:absolute;
+	top:0px;
+	z-index:2;
+}
+
+.main{
+	width:100%;
+	top:0px;
+	height:400px;
+	max-width:1200px;
+	margin:auto;
+}
+
+#skyline{
+	width:100%;
+	max-width:1200px;
+	min-width:800px;
+	position:absolute;
+	top:0px;
+}
+
+/*skyline image */
+ 
+ #content{
+	margin-top:500px;
+	margin-left: auto;
+	margin-right: auto;
+    align-items: center;
+    width: fit-content;
+}
+
+ 
+ h1 {
+    position: relative;
+    top: -10px;
+    margin: auto;
+    color: white;
+    font-family: 'Berkshire Swash', cursive;
+    vertical-align: top;
+}
+
+.heading{
+	margin: auto;
+	text-align:center;
+	width:100%;
+	background-color:#794c13;
+	border-top:4px solid #2E4600;
+	border-bottom:4px solid #2E4600;
+	box-shadow: 5px 10px 8px #888888;
+	font-size:2em;
+	z-index:2;
+	display: inline-flex;
+}
+
+#subHeading{
+	margin-top:200px;
+}
+
+#stickyHeader{
+	position: sticky;
+    top: 0px;
+
+}
+
+#title {
+    width: -webkit-fill-available;
+    height: 72px;
+    margin: auto;
+    display: inline-flex;
+}
+
+.subtitle{
+	margin:auto;
+    color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size:1.7em;
+}
+
+#logo{
+    position: relative;
+	transition: all 2s;
+	display: inline;
+}
+
+#halflogo{
+	z-index:2;
+	 position: relative;
+	width: auto;
+    height: 400px;
+    top: -200px;	
+}
+
+#logo.before {
+    width: auto;
+    height: 400px;
+    top: -200px;
+}
+
+#logo.after{
+    height: 95px;
+    top: -7px;
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#link1,  #link2{
+	text-decoration:none;
+	margin:auto;
+    color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size:1em;
+	transition: opacity 1s;
+}
+
+#link1.appear{
+	opacity:1;}
+#link2.appear{
+	opacity:1;}
+#link1.disappear{
+	opacity:0;}
+#link2.disappear{
+	opacity:0;}
+
+
+
+.container{
+	position:relative;
+	top:-48px;
+	background-size:cover;
+	max-width:1300px;
+	min-width:800px;
+	margin:auto;
+	width:100%;
+}
+
+#description{
+	position:relative;
+	text-align:center;
+	margin:auto;
+	width:fit-content;
+}
+
+ #slogan{
+	font-family:'Roboto';
+	color:white;
+	font-size:3em;
+	opacity:0;
+	transform: translate(0, 20px);
+    transition: all 2s;
+}
+
+#slogan.visible{
+	opacity:1;
+	transform: translate(0, 0);
+} 
+
+#blurb.visible2{
+	opacity:1;
+	transform:translate(0,0);
+}
+#promoText.visible3{
+	opacity:1;
+	transform:translate(0,0);
+}
+
+
+
+#summaryBox {
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(images/treeline.jpg);
+	background-position-y:-90px; 
+
+}
+
+#logoBox{
+	display:inline-block;
+	width:fit-content;
+	    margin: 5%;
+}
+
+#blurbBox{
+	width: 30%;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 42px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    float: right;
+    margin: 3%;
+    margin-right: 53px;
+}
+
+#blurb{
+	font-size:1.3em;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	opacity:0;
+	transform:translate(0,20px);
+	transition:all 2s;
+}
+
+#charity{
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url(images/seedplant.jpg);
+	background-position-y:-40px;	
+}
+
+#charityLogo{
+	width:16%;
+	float:right;
+	margin:5%;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
+}
+
+#promoText{
+	text-align:center;
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	width:30%;
+	float:left;
+	margin:5%;
+	font-size:1.3em;
+	opacity:0;
+	transform:translate(0,20px);
+	transition:all 2s;
+}
+
+
+/* about us page */
+
+#backgroundDiv{
+	min-width: 684px;
+	max-width:1100px;
+	margin:auto;
+}
+
+#motoBox{
+	width:fit-content;
+	display:block;
+	margin:auto;
+	background-color:#576b4e;
+	margin-top:20px;
+	border:5px solid #232e27;
+	
+}
+
+#moto{
+	margin-top:2%;
+	margin-bottom:2%;
+	text-align:center;
+	margin-left:10%;
+	margin-right:10%;
+	color:white;
+	font-family:'Roboto', sans-serif;
+	font-size:1.7em;
+}
+
+.textBox{
+	background-color:#576B4E;
+	border:5px solid #232E27;
+	padding:10px;
+	display:table-cell;
+	margin:1%;
+	text-align:left;
+}
+
+.textBox h3 {
+	color:white;
+	display:inline;
+	font-family:'Roboto', sans-serif;
+}
+
+#companyBeliefs{
+	width:37%;
+	vertical-align:top;
+	display:inline-block
+}
+
+ p{
+	color:white;
+	font-family:'Roboto', sans-serif;
+}
+
+
+
+#chrisProfile{
+	width:100%;
+	float:right;
+}
+
+u{
+	font-size:1.5em;
+}
+
+
+.profilePic{
+	width:40%;
+	float:right;
+	display:inline;
+	margin:auto;
+	top: -33px;
+    right: -27px;
+    position: relative;
+}
+
+.column{
+	display:inline-grid;
+    width:50%;
+	
+}
+#contactUs{
+width:100%;
+	float:right;
+	
+}
+
+/* Folio page */
+#folio{
+	width:100%;
+	height:100%;
+}
+
+.websiteScreenshot{
+	width:40%;
+	margin:auto;
+	margin:3%;
+	height:auto;
+	border:2px solid black;
+}
+
+#folioContainer{
+	top:-260px;
+	position:relative;
+	display:block;
+	margin:auto;
+	width:100%;
+	max-width:1150px;
+	min-width: 550px;
+}
+
+#folioBox1{
+	width:40%;
+	float:left;	
+	margin-left:2%;
+}
+
+#folioBox2{
+	width:40%;
+	float:right;
+}
+
+.textBox h4{
+	font-family:'Roboto', sans-serif;
+	color:white;
+	display:inline-block;
+	margin-top:0px;
+}
+
+.emailIcon{
+	width:10%;
+	vertical-align:middle;
+}
+
+@media only screen and (max-device-width: 480px) {
+	html, body 
+	{
+		margin: 0; height: 100%; overflow: hidden
+		
+	}
+
+	
+	.mobileBanner{
+		top:0px;
+		width:100%;
+		height:100%;
+		position:fixed;
+		background-color:#96e0ff;
+		align-items:center;
+		visibility:visible;
+		z-index:50;
+	}
+	
+	.block{
+		width:60%;
+		margin:auto;
+		margin-top:50%;
+	}
+	
+	.mobileBanner img{
+		width:45%;
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+	} 
+	
+	.mobileBanner h3{
+		margin-top:30px;
+		font-size:2.5em;
+		color:green;
+		text-align:center;
+		font-family:'Roboto', sans-serif;
+	}
+	
+	.mobileBanner h2{
+		margin:0px;
+		text-align:center;
+		font-size:3em;
+		color:green;
+		font-family: 'Berkshire Swash', cursive;
+	}
+
+
+    }
